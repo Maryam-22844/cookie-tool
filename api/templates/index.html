@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 20px;
+            width: 40%; /* Increase form width */
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.2em; /* Larger label text */
+        }
+        input[type="text"] {
+            width: calc(100% - 20px); /* Adjust width for padding */
+            padding: 15px; /* Increased padding for larger input box */
+            margin-bottom: 25px;
+            border: 2px solid #ddd; /* Thicker border */
+            border-radius: 6px;
+            font-size: 1.1em; /* Larger font size */
+        }
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            padding: 15px 30px; /* Larger button */
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.2em; /* Larger font size for the button */
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+        @media (max-width: 600px) { /* Responsive design for smaller screens */
+            form {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Secret Key and User ID</h1>
+    <form method="post">
+        <label for="user_id">User ID:</label>
+        <input type="text" name="user_id" id="user_id" required>
+        <br>
+        <input type="submit" value="Generate Cookie">
+    </form>
+</body>
+</html>
